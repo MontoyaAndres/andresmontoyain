@@ -1,0 +1,136 @@
+header {
+  height: 60px;
+}
+
+.main-content {
+  max-width: 1010px;
+}
+
+.gray-timeline {
+  background-color: #e6ebf1;
+}
+.gray-400 {
+  background-color: #959da5;
+}
+.gray-500 {
+  color: #6a737d;
+}
+.gray-700 {
+  background-color: #444d56;
+}
+.gray-900 {
+  background-color: #24292e;
+}
+.gray-900-text {
+  color: #24292e;
+}
+.blue-300 {
+  background-color: #79b8ff;
+}
+.blue-400 {
+  background-color: #c3daf5;
+}
+.blue-500 {
+  background-color: #0366d6;
+}
+.blue-800 {
+  background-color: #032f62;
+}
+.green-400 {
+  background-color: #85e89d;
+}
+.green-500 {
+  background-color: #28a745;
+}
+.yellow-400 {
+  background-color: #ffdf5d;
+}
+.yellow-500 {
+  background-color: #ffd33d;
+}
+.yellow-600 {
+  background-color: #f9c513;
+}
+.yellow-700 {
+  background-color: #dbab09;
+}
+.yellow-900 {
+  background-color: #735c0f;
+}
+.orange-400 {
+  background-color: #fb8532;
+}
+.orange-500 {
+  background-color: #f66a0a;
+}
+.orange-700 {
+  background-color: #d15704;
+}
+.red-300 {
+  background-color: #f97583;
+}
+.red-400 {
+  background-color: #ea4a5a;
+}
+.red-600 {
+  background-color: #cb2431;
+}
+.red-800 {
+  background-color: #9e1c23;
+}
+.purple-400 {
+  background-color: #8a63d2;
+}
+.purple-500 {
+  background-color: #6f42c1;
+}
+.purple-700 {
+  background-color: #4c2889;
+}
+.black {
+  background-color: #1b1f23;
+}
+
+.left-column {
+  max-width: 253px;
+}
+.summary-name {
+  font-size: 26px;
+  line-height: 30px;
+}
+.summary-subtitle {
+  line-height: 24px;
+}
+.summary-button {
+  width: 229px;
+}
+.summary-toolkit {
+  height: 35px;
+}
+
+.pinned-list {
+  flex-direction: column;
+}
+.pinned-item {
+  flex: 48%;
+}
+.language-indicator {
+  top: 1px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .column-container {
+    flex-wrap: nowrap !important;
+  }
+}
+
+@media (min-width: 1010px) {
+  .container {
+    width: 725px;
+    display: flex;
+  }
+}
