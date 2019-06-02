@@ -1,7 +1,7 @@
 <script>
   import Layout from "./components/layout/index.svelte";
   import Resume from "./components/resume/index.svelte";
-  import Projects from "./components/projects/index.svelte";
+  import Content from "./components/content/index.svelte";
 
   function newColor() {
     return (
@@ -23,18 +23,11 @@
       flex-wrap: nowrap !important;
     }
   }
-
-  @media (min-width: 1010px) {
-    .container {
-      width: 725px;
-      display: flex;
-    }
-  }
 </style>
 
 <Layout>
   <div class="d-flex flex-justify-around flex-wrap column-container">
     <Resume randomColor={newColor} />
-    <Projects randomColor={newColor} />
+    <Content randomColor={newColor} />
   </div>
 </Layout>

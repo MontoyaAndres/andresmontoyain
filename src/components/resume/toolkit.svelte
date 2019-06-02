@@ -21,12 +21,14 @@
   ];
 
   const learning = [
-    "Prisma",
-    "Firebase",
-    "PostgreSQL",
-    "Figma",
+    "Redis",
     "Python",
-    "Electron.js"
+    "Svelte.js",
+    "PostgreSQL",
+    "Electron.js",
+    "Firebase",
+    "Figma",
+    "Prisma"
   ];
 </script>
 
