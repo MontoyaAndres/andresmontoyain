@@ -1,0 +1,272 @@
+{
+  "en": {
+    "menuProjectsTitle": "Projects",
+    "menuExperiencesTitle": "Experiences",
+    "sectionProjectsTitle": "Pinned Projects",
+    "sectionExperiencesTitle": "Experience activity",
+    "projects": [
+      {
+        "url": "https://github.com/MontoyaAndres/AVMod",
+        "title": "AVMod",
+        "description": "Create your own powershell, malware desktop app or even clickjacking web with a single command for unix and windows systems.",
+        "language": "Python",
+        "status": "Working on",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/GradeProject",
+        "title": "Exception of absenteeism UNIMINUTO",
+        "description": "Software Remission (exception of absenteeism) for UNIMINUTO Girardot, Colombia",
+        "language": "JavaScript",
+        "status": "Completed",
+        "year": "2018"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/slack-clone",
+        "title": "slack-clone",
+        "description": "Slack clone, the funtionality to create and login users who will can create workspaces, channels and send text or multimedia messages",
+        "language": "JavaScript",
+        "status": "Completed",
+        "year": "2018"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/FacebookNews",
+        "title": "Simulate a Fake news with Facebook? 👀",
+        "description": "Simulate a Facebook news section to deceive your victims!",
+        "language": "JavaScript",
+        "status": "Completed",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/platzi/tree/master/hapi-hello",
+        "title": "Platzioverflow",
+        "description": "Ask what you need and you will receive any response!",
+        "language": "JavaScript",
+        "status": "Completed",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/platzi/tree/master/electron-platzipics",
+        "title": "Platzipics",
+        "description": "Edit and filter your images with this desktop app on Windows, Mac or Linux",
+        "language": "JavaScript",
+        "status": "Completed",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/PWA-APP.git",
+        "title": "EDgram",
+        "description": "Progressive web application to upload your photos with your friends",
+        "language": "JavaScript",
+        "status": "Completed",
+        "year": "2018"
+      }
+    ],
+    "experiences": [
+      {
+        "months": "february-october",
+        "years": "2016-2019",
+        "icon": "gift",
+        "commit": "Finished Technology in Informatics career at UNIMINUTO Centro regional Girardot",
+        "type": "study/university",
+        "technology": "Community"
+      },
+      {
+        "months": "may",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-backend-javascript.jpg",
+        "commit": "Diploma of \"BACKEND CON JAVASCRIPT\"",
+        "type": "study/platzi",
+        "technology": "JavaScript"
+      },
+      {
+        "months": "may",
+        "years": "2019",
+        "icon": "gift",
+        "urlFile": "images/premio-excelencia.jpeg",
+        "commit": "Recognition in the \"NOCHE DE LA EXCELENCIA\" at UNIMINUTO Centro regional Girardot",
+        "type": "study/university",
+        "technology": "Community"
+      },
+      {
+        "months": "april",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-idioma-ingles.jpg",
+        "commit": "Diploma of \"CARRERA DE INGLÉS\"",
+        "type": "study/platzi",
+        "technology": "Pation"
+      },
+      {
+        "months": "april",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-desarrollo-react.jpg",
+        "commit": "Diploma of \"CARRERA DE FRONT-END CON REACT.JS\"",
+        "type": "study/platzi",
+        "technology": "JavaScript"
+      },
+      {
+        "months": "april",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-arquitecto.jpg",
+        "commit": "Diploma of \"CARRERA DE ARQUITECTURA FRONT-END\"",
+        "type": "study/platzi",
+        "technology": "HTML-CSS"
+      },
+      {
+        "months": "november",
+        "years": "2018-*",
+        "icon": "git",
+        "commit": "Let's beginning an entrepreneurship!",
+        "card": {
+          "title": "Te Vi Colombia",
+          "description": "Application for helping people and companies to grow up in their entrepreneurship, professional practices and employment in Colombia.",
+          "motivation": {
+            "positive": "JavaScript",
+            "negative": "Free time",
+            "colorCount": ["green", "green", "green", "red", "red"]
+          },
+          "type": "Private"
+        }
+      }
+    ]
+  },
+  "es": {
+    "menuProjectsTitle": "Proyectos",
+    "menuExperiencesTitle": "Experiencias",
+    "sectionProjectsTitle": "Proyectos fijados",
+    "sectionExperiencesTitle": "Experiencias",
+    "projects": [
+      {
+        "url": "https://github.com/MontoyaAndres/AVMod",
+        "title": "AVMod",
+        "description": "Crear tu propia powershell, malware para escritorio o incluso clickjacking web con un único comando para sistemas unix y windows.",
+        "language": "Python",
+        "status": "Trabajando",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/GradeProject",
+        "title": "Excepción de ausentismo UNIMINUTO",
+        "description": "Software de remisión (excepción de ausentismo) para la UNIMINUTO Girardot, Colombia",
+        "language": "JavaScript",
+        "status": "Completado",
+        "year": "2018"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/slack-clone",
+        "title": "slack-clone",
+        "description": "Slack clone, la funcionalidad de crear y registrar usuarios que podrán crear espacios de trabajo, canales y enviar mensajes de texto o archivos.",
+        "language": "JavaScript",
+        "status": "Completado",
+        "year": "2018"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/FacebookNews",
+        "title": "Simular una noticia falsa con Facebook? 👀",
+        "description": "Simula una sección de noticia falsa de Facebook para engañar a tus victimas!",
+        "language": "JavaScript",
+        "status": "Completado",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/platzi/tree/master/hapi-hello",
+        "title": "Platzioverflow",
+        "description": "Pregunta lo que necesitas y recibiras alguna respuesta!",
+        "language": "JavaScript",
+        "status": "Completado",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/platzi/tree/master/electron-platzipics",
+        "title": "Platzipics",
+        "description": "Edita y filtra tus imagenes con esta aplicación de escritorio en Windows, Mac o Linux",
+        "language": "JavaScript",
+        "status": "Completado",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/PWA-APP.git",
+        "title": "EDgram",
+        "description": "Aplicación web progresiva para subir tus fotos con tus amigos",
+        "language": "JavaScript",
+        "status": "Completado",
+        "year": "2018"
+      }
+    ],
+    "experiences": [
+      {
+        "months": "febrero-octubre",
+        "years": "2016-2019",
+        "icon": "gift",
+        "commit": "Finalice la carrera Tecnología en Informática en la UNIMINUTO Centro regional Girardot",
+        "type": "estudio/universidad",
+        "technology": "Comunidad"
+      },
+      {
+        "months": "mayo",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-backend-javascript.jpg",
+        "commit": "Diploma de \"BACKEND CON JAVASCRIPT\"",
+        "type": "estudio/platzi",
+        "technology": "JavaScript"
+      },
+      {
+        "months": "mayo",
+        "years": "2019",
+        "icon": "gift",
+        "urlFile": "images/premio-excelencia.jpeg",
+        "commit": "Reconocimiento en la \"NOCHE DE LA EXCELENCIA\" en la UNIMINUTO Centro regional Girardot",
+        "type": "estudio/universidad",
+        "technology": "Comunidad"
+      },
+      {
+        "months": "abril",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-idioma-ingles.jpg",
+        "commit": "Diploma de \"CARRERA DE INGLÉS\"",
+        "type": "estudio/platzi",
+        "technology": "Pasión"
+      },
+      {
+        "months": "abril",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-desarrollo-react.jpg",
+        "commit": "Diploma de \"CARRERA DE FRONT-END CON REACT.JS\"",
+        "type": "estudio/platzi",
+        "technology": "JavaScript"
+      },
+      {
+        "months": "abril",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-arquitecto.jpg",
+        "commit": "Diploma de \"CARRERA DE ARQUITECTURA FRONT-END\"",
+        "type": "estudio/platzi",
+        "technology": "HTML-CSS"
+      },
+      {
+        "months": "noviembre",
+        "years": "2018-*",
+        "icon": "git",
+        "commit": "Comencemos un emprendimiento!",
+        "card": {
+          "title": "Te Vi Colombia",
+          "description": "Aplicación para ayudar personas y compañias a crecer en sus emprendimientos, prácticas profesionales y empleo en Colombia.",
+          "motivation": {
+            "positive": "JavaScript",
+            "negative": "Tiempo libre",
+            "colorCount": ["green", "green", "green", "red", "red"]
+          },
+          "type": "Privado"
+        }
+      }
+    ]
+  }
+}

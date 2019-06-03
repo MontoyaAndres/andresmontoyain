@@ -3,8 +3,9 @@
   import Gift from "../icons/gift.svelte";
   import Rocket from "../icons/rocket.svelte";
 
-  export let randomColor;
+  export let sectionExperiencesTitle;
   export let experiences;
+  export let randomColor;
 </script>
 
 <style>
@@ -81,7 +82,9 @@
 </style>
 
 <section class="mt-5" aria-labelledby="section-3-header">
-  <h3 id="section-3-header" class="f4 mb-2 text-normal">Experience activity</h3>
+  <h3 id="section-3-header" class="f4 mb-2 text-normal">
+    {sectionExperiencesTitle}
+  </h3>
 
   {#each experiences as experience}
     <div class="width-full">
