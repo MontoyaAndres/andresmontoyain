@@ -1,6 +1,8 @@
 <script>
   import ToolkitSet from "./toolkit-set.svelte";
 
+  export let json;
+  export let current_language;
   export let randomColor;
 
   const toolkits = [
@@ -32,5 +34,11 @@
   ];
 </script>
 
-<ToolkitSet {randomColor} title="Toolkit Set" items={toolkits} />
-<ToolkitSet {randomColor} title="Learning" items={learning} />
+<ToolkitSet
+  title={json[current_language].setToolsTitle}
+  items={toolkits}
+  {randomColor} />
+<ToolkitSet
+  title={json[current_language].learningToolsTitle}
+  items={learning}
+  {randomColor} />

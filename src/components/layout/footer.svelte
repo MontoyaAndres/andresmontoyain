@@ -1,8 +1,10 @@
+<script>
+  export let json;
+  export let current_language;
+</script>
+
 <footer class="mb-6 pt-4 border-top">
   <p class="mb-2">
-    This site was created using
-    <a href="http://primer.github.io">GitHub's Primer Design System CSS</a>
-    and inspired by
-    <a href="https://github.com/nataliemarleny">Natalie Marleny</a>
+    {@html json[current_language].footer}
   </p>
 </footer>

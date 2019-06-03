@@ -1,6 +1,9 @@
 <script>
   import Localization from "../icons/localization.svelte";
   import Link from "../icons/link.svelte";
+
+  export let json;
+  export let current_language;
 </script>
 
 <style>
@@ -24,27 +27,25 @@
 <div class="py-3">
   <h1 class="text-bold summary-name">Andrés Mauricio Montoya Sánchez</h1>
   <h2 class="f3-light text-gray summary-subtitle">
-    Software Engineer in training
+     {json[current_language].subtitle}
   </h2>
   <h2 class="f3-light text-gray summary-subtitle">
     (Front-End / Back-End・JavaScript)
   </h2>
 </div>
-<p class="f5 mb-3 gray-900-text">
-  Fallen in love about programming and languages culture. Improving my learning!
-</p>
+<p class="f5 mb-3 gray-900-text"> {json[current_language].description} </p>
 
 <a
   class="btn mb-3 text-center text-gray-dark no-underline summary-button"
   role="button"
   tabindex="0"
   href="https://github.com/MontoyaAndres/andresmontoyain">
-  View this resume inside 👀
+   {json[current_language].codeMessage}
 </a>
 
 <aside class="btn-link text-small muted-link mb-3">
   <a href="https://www.linkedin.com/in/andresmontoyain/" class="muted-link">
-    Professional network
+     {json[current_language].networkMessage}
   </a>
 </aside>
 

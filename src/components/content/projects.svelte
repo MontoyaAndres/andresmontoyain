@@ -27,6 +27,7 @@
 
 <section class="mt-4" aria-labelledby="section-1-header">
   <h3 id="section-1-header" class="f4 mb-2 text-normal">Pinned Projects</h3>
+
   <ul class="d-flex flex-column list-style-none mb-1">
     <div class="d-flex flex-wrap flex-justify-between pinned-list">
       {#each projects as project}
