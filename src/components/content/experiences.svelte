@@ -1,6 +1,7 @@
 <script>
   import GitRepo from "../icons/git-repo.svelte";
   import Gift from "../icons/gift.svelte";
+  import Rocket from "../icons/rocket.svelte";
 
   export let randomColor;
   export let experiences;
@@ -105,6 +106,8 @@
               <GitRepo />
             {:else if experience.icon === 'gift'}
               <Gift />
+            {:else if experience.icon === 'rocket'}
+              <Rocket />
             {/if}
           </span>
           <span
@@ -113,10 +116,22 @@
         </div>
         <div class="py-3 pr-3">
           <span class="f4 text-gray lh-condensed"> {experience.commit} </span>
+
+          {#if experience.urlFile}
+            <div
+              class="border border-gray-dark rounded-1 p-5 mt-4"
+              style="width: 350px">
+              <img
+                class="text-center width-fit"
+                src={experience.urlFile}
+                alt={experience.commit} />
+            </div>
+          {/if}
+
           <div
             class="d-flex flex-wrap flex-row flex-justify-start
             flex-items-center mt-2">
-            {#if experience.isCard}
+            {#if experience.card}
               <div
                 class="border border-gray-dark rounded-1 p-3 mt-3 timeline-card
                 d-flex">

@@ -1911,8 +1911,42 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (106:49) 
-    function create_if_block_2(ctx) {
+    // (109:51) 
+    function create_if_block_4(ctx) {
+    	var current;
+
+    	var rocket = new Rocket({ $$inline: true });
+
+    	return {
+    		c: function create() {
+    			rocket.$$.fragment.c();
+    		},
+
+    		m: function mount(target, anchor) {
+    			mount_component(rocket, target, anchor);
+    			current = true;
+    		},
+
+    		i: function intro(local) {
+    			if (current) return;
+    			rocket.$$.fragment.i(local);
+
+    			current = true;
+    		},
+
+    		o: function outro(local) {
+    			rocket.$$.fragment.o(local);
+    			current = false;
+    		},
+
+    		d: function destroy(detaching) {
+    			rocket.$destroy(detaching);
+    		}
+    	};
+    }
+
+    // (107:49) 
+    function create_if_block_3(ctx) {
     	var current;
 
     	var gift = new Gift({ $$inline: true });
@@ -1945,8 +1979,8 @@ var app = (function () {
     	};
     }
 
-    // (104:12) {#if experience.icon === 'git'}
-    function create_if_block_1(ctx) {
+    // (105:12) {#if experience.icon === 'git'}
+    function create_if_block_2(ctx) {
     	var current;
 
     	var gitrepo = new Git_repo({ $$inline: true });
@@ -1979,7 +2013,47 @@ var app = (function () {
     	};
     }
 
-    // (179:12) {:else}
+    // (120:10) {#if experience.urlFile}
+    function create_if_block_1(ctx) {
+    	var div, img, img_src_value, img_alt_value;
+
+    	return {
+    		c: function create() {
+    			div = element("div");
+    			img = element("img");
+    			img.className = "text-center width-fit";
+    			img.src = img_src_value = ctx.experience.urlFile;
+    			img.alt = img_alt_value = ctx.experience.commit;
+    			add_location(img, file$e, 123, 14, 2885);
+    			div.className = "border border-gray-dark rounded-1 p-5 mt-4";
+    			set_style(div, "width", "350px");
+    			add_location(div, file$e, 120, 12, 2765);
+    		},
+
+    		m: function mount(target, anchor) {
+    			insert(target, div, anchor);
+    			append(div, img);
+    		},
+
+    		p: function update(changed, ctx) {
+    			if ((changed.experiences) && img_src_value !== (img_src_value = ctx.experience.urlFile)) {
+    				img.src = img_src_value;
+    			}
+
+    			if ((changed.experiences) && img_alt_value !== (img_alt_value = ctx.experience.commit)) {
+    				img.alt = img_alt_value;
+    			}
+    		},
+
+    		d: function destroy(detaching) {
+    			if (detaching) {
+    				detach(div);
+    			}
+    		}
+    	};
+    }
+
+    // (194:12) {:else}
     function create_else_block(ctx) {
     	var span0, t0_value = ctx.experience.type, t0, t1, small, span1, t2, t3_value = ctx.experience.technology, t3;
 
@@ -1993,12 +2067,12 @@ var app = (function () {
     			t2 = space();
     			t3 = text(t3_value);
     			span0.className = "pr-3";
-    			add_location(span0, file$e, 179, 14, 5604);
+    			add_location(span0, file$e, 194, 14, 6065);
     			span1.className = "language-indicator position-relative d-inline-block";
     			set_style(span1, "background-color", ctx.randomColor());
-    			add_location(span1, file$e, 181, 16, 5712);
+    			add_location(span1, file$e, 196, 16, 6173);
     			small.className = "f6 text-gray pt-1";
-    			add_location(small, file$e, 180, 14, 5662);
+    			add_location(small, file$e, 195, 14, 6123);
     		},
 
     		m: function mount(target, anchor) {
@@ -2035,7 +2109,7 @@ var app = (function () {
     	};
     }
 
-    // (119:12) {#if experience.isCard}
+    // (134:12) {#if experience.card}
     function create_if_block(ctx) {
     	var div7, div6, div0, svg, path, t0, h3, t1_value = ctx.experience.card.title, t1, t2, p, t3_value = ctx.experience.card.description, t3, t4, div5, div1, small0, t5, t6_value = ctx.experience.card.motivation.positive, t6, t7, small1, t8, t9_value = ctx.experience.card.motivation.negative, t9, t10, div4, div2, t11, div3, span, t13, small2, t14_value = ctx.experience.card.type, t14;
 
@@ -2088,7 +2162,7 @@ var app = (function () {
     			attr(path, "fill", "#28a745");
     			attr(path, "fill-rule", "evenodd");
     			attr(path, "d", "M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25\n                        1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08\n                        1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67\n                        1.11-.86 1.41-1.25 2.06-1.45\n                        3.23-.02.05-.02.11-.02.17H5c0-.06\n                        0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44\n                        6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22\n                        1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4\n                        14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z");
-    			add_location(path, file$e, 132, 22, 3300);
+    			add_location(path, file$e, 147, 22, 3761);
     			attr(svg, "aria-label", "lightbulb");
     			attr(svg, "class", "mr-2 timeline-card-octicon svelte-1w5qewm");
     			attr(svg, "width", "12");
@@ -2096,33 +2170,33 @@ var app = (function () {
     			attr(svg, "viewBox", "0 0 12 16");
     			attr(svg, "role", "img");
     			set_style(svg, "min-width", "16px");
-    			add_location(svg, file$e, 124, 20, 2982);
+    			add_location(svg, file$e, 139, 20, 3443);
     			h3.className = "lh-condensed timeline-card-header svelte-1w5qewm";
-    			add_location(h3, file$e, 146, 20, 4111);
+    			add_location(h3, file$e, 161, 20, 4572);
     			div0.className = "d-flex timeline-card flex-items-center svelte-1w5qewm";
-    			add_location(div0, file$e, 123, 18, 2909);
+    			add_location(div0, file$e, 138, 18, 3370);
     			p.className = "timeline-card-text text-gray mt-2 mb-3 svelte-1w5qewm";
-    			add_location(p, file$e, 150, 18, 4274);
+    			add_location(p, file$e, 165, 18, 4735);
     			small0.className = "f6 text-green text-bold pt-1 mr-3";
-    			add_location(small0, file$e, 155, 22, 4559);
+    			add_location(small0, file$e, 170, 22, 5020);
     			small1.className = "f6 pt-1 text-red text-bold";
-    			add_location(small1, file$e, 158, 22, 4726);
+    			add_location(small1, file$e, 173, 22, 5187);
     			div1.className = "timeline-card-info d-flex svelte-1w5qewm";
-    			add_location(div1, file$e, 154, 20, 4497);
+    			add_location(div1, file$e, 169, 20, 4958);
     			div2.className = "mx-3";
-    			add_location(div2, file$e, 163, 22, 4973);
+    			add_location(div2, file$e, 178, 22, 5434);
     			span.className = "text-gray-light mx-1";
-    			add_location(span, file$e, 169, 24, 5260);
+    			add_location(span, file$e, 184, 24, 5721);
     			small2.className = "f6 text-gray pt-2";
-    			add_location(small2, file$e, 170, 24, 5328);
-    			add_location(div3, file$e, 168, 22, 5230);
+    			add_location(small2, file$e, 185, 24, 5789);
+    			add_location(div3, file$e, 183, 22, 5691);
     			div4.className = "timeline-card-info d-flex svelte-1w5qewm";
-    			add_location(div4, file$e, 162, 20, 4911);
+    			add_location(div4, file$e, 177, 20, 5372);
     			div5.className = "timeline-card-text d-flex flex-justify-evenly svelte-1w5qewm";
-    			add_location(div5, file$e, 153, 18, 4417);
-    			add_location(div6, file$e, 122, 16, 2885);
+    			add_location(div5, file$e, 168, 18, 4878);
+    			add_location(div6, file$e, 137, 16, 3346);
     			div7.className = "border border-gray-dark rounded-1 p-3 mt-3 timeline-card\n                d-flex svelte-1w5qewm";
-    			add_location(div7, file$e, 119, 14, 2759);
+    			add_location(div7, file$e, 134, 14, 3220);
     		},
 
     		m: function mount(target, anchor) {
@@ -2216,7 +2290,7 @@ var app = (function () {
     	};
     }
 
-    // (165:24) {#each experience.card.motivation.colorCount as color}
+    // (180:24) {#each experience.card.motivation.colorCount as color}
     function create_each_block_1(ctx) {
     	var span, span_class_value;
 
@@ -2224,7 +2298,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			span.className = span_class_value = "timeline-card-commits bg-" + ctx.color + " svelte-1w5qewm";
-    			add_location(span, file$e, 165, 26, 5097);
+    			add_location(span, file$e, 180, 26, 5558);
     		},
 
     		m: function mount(target, anchor) {
@@ -2245,13 +2319,14 @@ var app = (function () {
     	};
     }
 
-    // (85:2) {#each experiences as experience}
+    // (86:2) {#each experiences as experience}
     function create_each_block$2(ctx) {
-    	var div5, div0, h3, t0_value = ctx.experience.months, t0, t1, span0, t2_value = ctx.experience.years, t2, t3, span1, t4, div4, div1, span2, t5, span3, current_block_type_index, if_block0, t6, span4, t7, div3, span5, t8_value = ctx.experience.commit, t8, t9, div2, t10, current;
+    	var div5, div0, h3, t0_value = ctx.experience.months, t0, t1, span0, t2_value = ctx.experience.years, t2, t3, span1, t4, div4, div1, span2, t5, span3, current_block_type_index, if_block0, t6, span4, t7, div3, span5, t8_value = ctx.experience.commit, t8, t9, t10, div2, t11, current;
 
     	var if_block_creators = [
-    		create_if_block_1,
-    		create_if_block_2
+    		create_if_block_2,
+    		create_if_block_3,
+    		create_if_block_4
     	];
 
     	var if_blocks = [];
@@ -2259,6 +2334,7 @@ var app = (function () {
     	function select_block_type(ctx) {
     		if (ctx.experience.icon === 'git') return 0;
     		if (ctx.experience.icon === 'gift') return 1;
+    		if (ctx.experience.icon === 'rocket') return 2;
     		return -1;
     	}
 
@@ -2266,13 +2342,15 @@ var app = (function () {
     		if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
     	}
 
+    	var if_block1 = (ctx.experience.urlFile) && create_if_block_1(ctx);
+
     	function select_block_type_1(ctx) {
-    		if (ctx.experience.isCard) return create_if_block;
+    		if (ctx.experience.card) return create_if_block;
     		return create_else_block;
     	}
 
     	var current_block_type = select_block_type_1(ctx);
-    	var if_block1 = current_block_type(ctx);
+    	var if_block2 = current_block_type(ctx);
 
     	return {
     		c: function create() {
@@ -2299,39 +2377,41 @@ var app = (function () {
     			span5 = element("span");
     			t8 = text(t8_value);
     			t9 = space();
-    			div2 = element("div");
-    			if_block1.c();
+    			if (if_block1) if_block1.c();
     			t10 = space();
+    			div2 = element("div");
+    			if_block2.c();
+    			t11 = space();
     			span0.className = "pl-1 text-gray";
-    			add_location(span0, file$e, 89, 10, 1628);
+    			add_location(span0, file$e, 90, 10, 1675);
     			h3.className = "h6 pr-2 py-1 d-flex flex-nowrap";
-    			add_location(h3, file$e, 87, 8, 1542);
+    			add_location(h3, file$e, 88, 8, 1589);
     			span1.className = "timeline-horizontal gray-timeline svelte-1w5qewm";
     			set_style(span1, "flex-basis", "auto");
     			set_style(span1, "flex-grow", "2");
-    			add_location(span1, file$e, 91, 8, 1705);
+    			add_location(span1, file$e, 92, 8, 1752);
     			div0.className = "d-flex flex-row flex-items-center flex-start";
-    			add_location(div0, file$e, 86, 6, 1475);
+    			add_location(div0, file$e, 87, 6, 1522);
     			span2.className = "timeline-line-top gray-timeline svelte-1w5qewm";
-    			add_location(span2, file$e, 99, 10, 1982);
+    			add_location(span2, file$e, 100, 10, 2029);
     			span3.className = "d-flex flex-items-center flex-justify-center\n            timeline-circle-marker gray-timeline svelte-1w5qewm";
-    			add_location(span3, file$e, 100, 10, 2041);
+    			add_location(span3, file$e, 101, 10, 2088);
     			span4.className = "timeline-line-bottom gray-timeline svelte-1w5qewm";
     			set_style(span4, "flex-basis", "auto");
     			set_style(span4, "flex-grow", "2");
-    			add_location(span4, file$e, 109, 10, 2351);
+    			add_location(span4, file$e, 112, 10, 2475);
     			div1.className = "mr-3 d-flex flex-column flex-items-center flex-justify-center";
-    			add_location(div1, file$e, 97, 8, 1886);
+    			add_location(div1, file$e, 98, 8, 1933);
     			span5.className = "f4 text-gray lh-condensed";
-    			add_location(span5, file$e, 114, 10, 2524);
+    			add_location(span5, file$e, 117, 10, 2648);
     			div2.className = "d-flex flex-wrap flex-row flex-justify-start\n            flex-items-center mt-2";
-    			add_location(div2, file$e, 115, 10, 2603);
+    			add_location(div2, file$e, 130, 10, 3066);
     			div3.className = "py-3 pr-3";
-    			add_location(div3, file$e, 113, 8, 2490);
+    			add_location(div3, file$e, 116, 8, 2614);
     			div4.className = "d-flex flex-row flex-nowrap";
-    			add_location(div4, file$e, 96, 6, 1836);
+    			add_location(div4, file$e, 97, 6, 1883);
     			div5.className = "width-full";
-    			add_location(div5, file$e, 85, 4, 1444);
+    			add_location(div5, file$e, 86, 4, 1491);
     		},
 
     		m: function mount(target, anchor) {
@@ -2358,9 +2438,11 @@ var app = (function () {
     			append(div3, span5);
     			append(span5, t8);
     			append(div3, t9);
+    			if (if_block1) if_block1.m(div3, null);
+    			append(div3, t10);
     			append(div3, div2);
-    			if_block1.m(div2, null);
-    			append(div5, t10);
+    			if_block2.m(div2, null);
+    			append(div5, t11);
     			current = true;
     		},
 
@@ -2403,14 +2485,27 @@ var app = (function () {
     				set_data(t8, t8_value);
     			}
 
-    			if (current_block_type === (current_block_type = select_block_type_1(ctx)) && if_block1) {
-    				if_block1.p(changed, ctx);
-    			} else {
-    				if_block1.d(1);
-    				if_block1 = current_block_type(ctx);
+    			if (ctx.experience.urlFile) {
     				if (if_block1) {
+    					if_block1.p(changed, ctx);
+    				} else {
+    					if_block1 = create_if_block_1(ctx);
     					if_block1.c();
-    					if_block1.m(div2, null);
+    					if_block1.m(div3, t10);
+    				}
+    			} else if (if_block1) {
+    				if_block1.d(1);
+    				if_block1 = null;
+    			}
+
+    			if (current_block_type === (current_block_type = select_block_type_1(ctx)) && if_block2) {
+    				if_block2.p(changed, ctx);
+    			} else {
+    				if_block2.d(1);
+    				if_block2 = current_block_type(ctx);
+    				if (if_block2) {
+    					if_block2.c();
+    					if_block2.m(div2, null);
     				}
     			}
     		},
@@ -2432,7 +2527,8 @@ var app = (function () {
     			}
 
     			if (~current_block_type_index) if_blocks[current_block_type_index].d();
-    			if_block1.d();
+    			if (if_block1) if_block1.d();
+    			if_block2.d();
     		}
     	};
     }
@@ -2473,10 +2569,10 @@ var app = (function () {
     			}
     			h3.id = "section-3-header";
     			h3.className = "f4 mb-2 text-normal";
-    			add_location(h3, file$e, 82, 2, 1324);
+    			add_location(h3, file$e, 83, 2, 1371);
     			section.className = "mt-5";
     			attr(section, "aria-labelledby", "section-3-header");
-    			add_location(section, file$e, 81, 0, 1264);
+    			add_location(section, file$e, 82, 0, 1311);
     		},
 
     		l: function claim(nodes) {
@@ -2597,7 +2693,7 @@ var app = (function () {
 
     const file$f = "src/components/content/index.svelte";
 
-    // (144:2) {:else}
+    // (189:2) {:else}
     function create_else_block$1(ctx) {
     	var current;
 
@@ -2644,7 +2740,7 @@ var app = (function () {
     	};
     }
 
-    // (142:2) {#if overview === 1}
+    // (187:2) {#if overview === 1}
     function create_if_block$1(ctx) {
     	var current;
 
@@ -2726,21 +2822,21 @@ var app = (function () {
     			t5 = space();
     			if_block.c();
     			span0.className = "Counter";
-    			add_location(span0, file$f, 129, 8, 3651);
+    			add_location(span0, file$f, 174, 8, 4905);
     			span1.title = "Overview";
     			span1.className = span1_class_value = "UnderlineNav-item " + (ctx.overview === 1 ? 'selected' : '') + " svelte-cuggrr";
-    			add_location(span1, file$f, 124, 6, 3482);
+    			add_location(span1, file$f, 169, 6, 4736);
     			span2.className = "Counter";
-    			add_location(span2, file$f, 136, 8, 3893);
+    			add_location(span2, file$f, 181, 8, 5147);
     			span3.title = "Experiences";
     			span3.className = span3_class_value = "UnderlineNav-item " + (ctx.overview === 2 ? 'selected' : '') + " svelte-cuggrr";
-    			add_location(span3, file$f, 131, 6, 3718);
+    			add_location(span3, file$f, 176, 6, 4972);
     			div0.className = "UnderlineNav-body";
-    			add_location(div0, file$f, 123, 4, 3444);
+    			add_location(div0, file$f, 168, 4, 4698);
     			nav.className = "UnderlineNav";
-    			add_location(nav, file$f, 122, 2, 3413);
+    			add_location(nav, file$f, 167, 2, 4667);
     			div1.className = "pb-4 pl-2 menu-large svelte-cuggrr";
-    			add_location(div1, file$f, 121, 0, 3376);
+    			add_location(div1, file$f, 166, 0, 4630);
 
     			dispose = [
     				listen(span1, "click", ctx.click_handler),
@@ -2905,11 +3001,56 @@ var app = (function () {
           technology: "Community"
         },
         {
+          months: "may",
+          years: "2019",
+          icon: "rocket",
+          urlFile: "images/diploma-backend-javascript.jpg",
+          commit: 'Diploma of "BACKEND CON JAVASCRIPT"',
+          type: "study/platzi",
+          technology: "JavaScript"
+        },
+        {
+          months: "may",
+          years: "2019",
+          icon: "gift",
+          urlFile: "images/premio-excelencia.jpeg",
+          commit:
+            'Recognition in the "NOCHE DE LA EXCELENCIA" at UNIMINUTO Centro regional Girardot',
+          type: "study/university",
+          technology: "Community"
+        },
+        {
+          months: "april",
+          years: "2019",
+          icon: "rocket",
+          urlFile: "images/diploma-idioma-ingles.jpg",
+          commit: 'Diploma of "CARRERA DE INGLÉS"',
+          type: "study/platzi",
+          technology: "Pation"
+        },
+        {
+          months: "april",
+          years: "2019",
+          icon: "rocket",
+          urlFile: "images/diploma-desarrollo-react.jpg",
+          commit: 'Diploma of "CARRERA DE FRONT-END CON REACT.JS"',
+          type: "study/platzi",
+          technology: "JavaScript"
+        },
+        {
+          months: "april",
+          years: "2019",
+          icon: "rocket",
+          urlFile: "images/diploma-arquitecto.jpg",
+          commit: 'Diploma of "CARRERA DE ARQUITECTURA FRONT-END"',
+          type: "study/platzi",
+          technology: "HTML-CSS"
+        },
+        {
           months: "november",
           years: "2018-*",
           icon: "git",
           commit: "Let's beginning an entrepreneurship!",
-          isCard: true,
           card: {
             title: "Te Vi Colombia",
             description:

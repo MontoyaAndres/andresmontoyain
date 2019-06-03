@@ -80,11 +80,56 @@
       technology: "Community"
     },
     {
+      months: "may",
+      years: "2019",
+      icon: "rocket",
+      urlFile: "images/diploma-backend-javascript.jpg",
+      commit: 'Diploma of "BACKEND CON JAVASCRIPT"',
+      type: "study/platzi",
+      technology: "JavaScript"
+    },
+    {
+      months: "may",
+      years: "2019",
+      icon: "gift",
+      urlFile: "images/premio-excelencia.jpeg",
+      commit:
+        'Recognition in the "NOCHE DE LA EXCELENCIA" at UNIMINUTO Centro regional Girardot',
+      type: "study/university",
+      technology: "Community"
+    },
+    {
+      months: "april",
+      years: "2019",
+      icon: "rocket",
+      urlFile: "images/diploma-idioma-ingles.jpg",
+      commit: 'Diploma of "CARRERA DE INGLÉS"',
+      type: "study/platzi",
+      technology: "Pation"
+    },
+    {
+      months: "april",
+      years: "2019",
+      icon: "rocket",
+      urlFile: "images/diploma-desarrollo-react.jpg",
+      commit: 'Diploma of "CARRERA DE FRONT-END CON REACT.JS"',
+      type: "study/platzi",
+      technology: "JavaScript"
+    },
+    {
+      months: "april",
+      years: "2019",
+      icon: "rocket",
+      urlFile: "images/diploma-arquitecto.jpg",
+      commit: 'Diploma of "CARRERA DE ARQUITECTURA FRONT-END"',
+      type: "study/platzi",
+      technology: "HTML-CSS"
+    },
+    {
       months: "november",
       years: "2018-*",
       icon: "git",
       commit: "Let's beginning an entrepreneurship!",
-      isCard: true,
       card: {
         title: "Te Vi Colombia",
         description:
