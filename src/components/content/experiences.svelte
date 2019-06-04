@@ -83,7 +83,7 @@
 
 <section class="mt-5" aria-labelledby="section-3-header">
   <h3 id="section-3-header" class="f4 mb-2 text-normal">
-    {sectionExperiencesTitle}
+     {sectionExperiencesTitle}
   </h3>
 
   {#each experiences as experience}
@@ -122,8 +122,8 @@
 
           {#if experience.urlFile}
             <div
-              class="border border-gray-dark rounded-1 p-5 mt-4"
-              style="width: 350px">
+              class="border border-gray-dark rounded-1 p-2 mt-1"
+              style="max-width: 350px">
               <img
                 class="text-center width-fit"
                 src={experience.urlFile}

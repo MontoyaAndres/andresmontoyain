@@ -1,10 +1,8 @@
 {
   "en": {
-    "text": "Andrés Montoya · Software Engineer in training (JavaScript)",
     "footer": "This site was created using <a href='http://primer.github.io'>GitHub's Primer Design System CSS</a> and inspired by <a href='https://github.com/nataliemarleny'>Natalie Marleny</a>"
   },
   "es": {
-    "text": "Andrés Montoya · Ingeniero de Software en formación (JavaScript)",
     "footer": "Este sitio fue creado usando <a href='http://primer.github.io'>GitHub's Primer Design System CSS</a> e inspirado por <a href='https://github.com/nataliemarleny'>Natalie Marleny</a>"
   }
 }

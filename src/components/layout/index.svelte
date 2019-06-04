@@ -16,7 +16,7 @@
   }
 </script>
 
-<Header json={Language} {current_language} {handleCurrentLanguage} />
+<Header {current_language} {handleCurrentLanguage} />
 <div class="main-content mx-auto px-3 p-responsive mt-4">
   <slot />
   <Footer json={Language} {current_language} />
