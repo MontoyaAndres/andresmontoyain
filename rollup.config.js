@@ -4,6 +4,7 @@ import commonjs from "rollup-plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import json from "rollup-plugin-json";
+import workbox from "rollup-plugin-workbox-build";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -61,6 +62,31 @@ export default {
 
       // generate a named export for every property of the JSON object
       namedExports: true // Default: true
+    }),
+
+    workbox({
+      mode: "generateSW",
+      options: {
+        swDest: "public/service-worker.js",
+        globDirectory: "public",
+        runtimeCaching: [
+          {
+            urlPattern: /^https?.*/,
+            handler: "networkFirst",
+            options: {
+              cacheName: "https-calls",
+              networkTimeoutSeconds: 15,
+              expiration: {
+                maxEntries: 150,
+                maxAgeSeconds: 30 * 24 * 60 * 60 // 1 month
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          }
+        ]
+      }
     })
   ],
   watch: {
