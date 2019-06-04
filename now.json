@@ -20,9 +20,19 @@
       }
     },
     {
+      "src": "/icons/(.*)",
+      "dest": "/icons/$1",
+      "headers": {
+        "cache-control": "immutable, max-age=31536000"
+      }
+    },
+    {
       "src": "/service-worker.js",
-      "headers": { "cache-control": "s-maxage=0" },
-      "dest": "/service-worker.js"
+      "dest": "/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
     },
     {
       "src": "/manifest.json",
