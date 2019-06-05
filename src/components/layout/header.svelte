@@ -14,7 +14,11 @@
     class="main-content mx-auto p-responsive d-flex flex-items-center flex-wrap">
     <div class="flex-auto d-flex flex-justify-between pr-3">
       <div class="flex-auto d-flex">
-        <img src="/favicon.png" class="mr-3" height="35" alt="luna dog" />
+        <img
+          src="/images/world_white.svg"
+          class="mr-3"
+          height="35"
+          alt="luna dog" />
         <h1 class="h4 f5 text-white text-bold">Andrés Montoya</h1>
       </div>
       <button
