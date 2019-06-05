@@ -15,7 +15,7 @@
     <div class="flex-auto d-flex flex-justify-between pr-3">
       <div class="flex-auto d-flex">
         <img
-          src="/images/world.svg"
+          src="/images/world_white.svg"
           class="mr-3"
           height="35"
           alt="luna dog" />
