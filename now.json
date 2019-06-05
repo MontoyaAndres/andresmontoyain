@@ -51,6 +51,10 @@
       "dest": "/favicon.png"
     },
     {
+      "src": "/init.js",
+      "dest": "/init.js"
+    },
+    {
       "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
       "dest": "/index.html"

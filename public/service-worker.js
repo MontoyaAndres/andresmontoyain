@@ -31,11 +31,15 @@ self.__precacheManifest = [
   },
   {
     "url": "bundle.js",
-    "revision": "3a463102e68b98a48c77000fafc7422a"
+    "revision": "92ebc351cca838527742d4dde54a8e96"
   },
   {
     "url": "index.html",
-    "revision": "87c712f5d5424ae4343af8f3b02f6552"
+    "revision": "5a1efd83f2e4b9bace4e302f337d5cf2"
+  },
+  {
+    "url": "init.js",
+    "revision": "2827a8ff74a63e6f562341bc209241b3"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
