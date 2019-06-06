@@ -21,7 +21,7 @@
 
 <img
   class="avatar width-full rounded-1"
-  src="images/me.jpg"
+  src="images/me.jpeg"
   alt="Andrés Montoya" />
 
 <div class="py-3">
