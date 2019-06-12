@@ -72,6 +72,15 @@
         "technology": "Community"
       },
       {
+        "months": "june",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-desarrollo-nodejs.jpg",
+        "commit": "Diploma of \"DESARROLLO CON NODE.JS\"",
+        "type": "study/platzi",
+        "technology": "JavaScript"
+      },
+      {
         "months": "may",
         "years": "2019",
         "icon": "rocket",
@@ -205,6 +214,15 @@
         "commit": "Finalice la carrera Tecnología en Informática en la UNIMINUTO Centro regional Girardot",
         "type": "estudio/universidad",
         "technology": "Comunidad"
+      },
+      {
+        "months": "junio",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-desarrollo-nodejs.jpg",
+        "commit": "Diploma de \"DESARROLLO CON NODE.JS\"",
+        "type": "estudio/platzi",
+        "technology": "JavaScript"
       },
       {
         "months": "mayo",
