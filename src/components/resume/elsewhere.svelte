@@ -44,7 +44,7 @@
   <a
     aria-label="Platzi"
     class="tooltipped tooltipped-n avatar-group-item"
-    href="https://platzi.com/@andresmontoyain">
+    href="https://platzi.com/@AndresMontoyaIN/">
     <img src="images/platzi.svg" alt="Platzi Logo." height="35" width="35" />
   </a>
 </div>
