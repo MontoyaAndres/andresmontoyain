@@ -1,6 +1,8 @@
 <script>
   import Localization from "../icons/localization.svelte";
   import Link from "../icons/link.svelte";
+  import Megaphone from '../icons/megaphone.svelte'
+  import Comment from '../icons/comment.svelte'
 
   export let json;
   export let current_language;
@@ -53,6 +55,18 @@
   <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
     <Localization />
     Colombia, Girardot
+  </li>
+  <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
+    <Megaphone />
+    <a href="tel:+573213726060">
+      +57 3213726060
+    </a>
+  </li>
+  <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
+    <Comment />
+    <a href="mailto:andresmontoyafcb@gmail.com">
+      andresmontoyafcb@gmail.com
+    </a>
   </li>
   <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
     <Link />

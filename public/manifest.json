@@ -46,9 +46,9 @@
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "/",
-  "description": "Este es mi sitio web personal.",
+  "description": "Sitio web personal de Andrés Mauricio Montoya Sánchez <andresmontoyafcb@gmail.com>",
   "lang": "es_CO",
-  "background_color": "#24292e",
+  "background_color": "#FFF",
   "theme_color": "#24292e",
   "related_applications": [],
   "prefer_related_applications": false

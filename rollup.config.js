@@ -5,6 +5,7 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import json from "rollup-plugin-json";
 import workbox from "rollup-plugin-workbox-build";
+import ms from "ms";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -71,14 +72,28 @@ export default {
         globDirectory: "public",
         runtimeCaching: [
           {
-            urlPattern: /^https?.*/,
+            urlPattern: /https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/Primer\/11.0.0\/build.css/,
             handler: "networkFirst",
             options: {
               cacheName: "https-calls",
               networkTimeoutSeconds: 15,
               expiration: {
                 maxEntries: 150,
-                maxAgeSeconds: 30 * 24 * 60 * 60 // 1 month
+                maxAgeSeconds: ms("30 days")
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/,
+            handler: "cacheFirst",
+            options: {
+              cacheName: "image-cache",
+              expiration: {
+                maxEntries: 150,
+                maxAgeSeconds: ms("10 days")
               },
               cacheableResponse: {
                 statuses: [0, 200]

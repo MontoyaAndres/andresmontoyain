@@ -31,11 +31,11 @@ self.__precacheManifest = [
   },
   {
     "url": "bundle.js",
-    "revision": "c75cd7ceac798dc3cb18318bbb38c826"
+    "revision": "f6aa9e65206d51109dfaf3e05ebd87f0"
   },
   {
     "url": "index.html",
-    "revision": "5a1efd83f2e4b9bace4e302f337d5cf2"
+    "revision": "ed55c6f3aa5dc94781caa73fc6b70e81"
   },
   {
     "url": "init.js",
@@ -44,4 +44,5 @@ self.__precacheManifest = [
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/^https?.*/, new workbox.strategies.NetworkFirst({ "cacheName":"https-calls","networkTimeoutSeconds":15, plugins: [new workbox.expiration.Plugin({ maxEntries: 150, maxAgeSeconds: 2592000, purgeOnQuotaError: false }), new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
+workbox.routing.registerRoute(/https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/Primer\/11.0.0\/build.css/, new workbox.strategies.NetworkFirst({ "cacheName":"https-calls","networkTimeoutSeconds":15, plugins: [new workbox.expiration.Plugin({ maxEntries: 150, maxAgeSeconds: 2592000000, purgeOnQuotaError: false }), new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
+workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|svg|gif)$/, new workbox.strategies.CacheFirst({ "cacheName":"image-cache", plugins: [new workbox.expiration.Plugin({ maxEntries: 150, maxAgeSeconds: 864000000, purgeOnQuotaError: false }), new workbox.cacheableResponse.Plugin({ statuses: [ 0, 200 ] })] }), 'GET');
