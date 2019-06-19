@@ -30,7 +30,8 @@
     "Electron.js",
     "Firebase",
     "Figma",
-    "Prisma"
+    "Prisma",
+    "AWS Amplify"
   ];
 </script>
 

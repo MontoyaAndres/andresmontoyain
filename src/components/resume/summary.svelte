@@ -70,6 +70,6 @@
   </li>
   <li class="d-flex flex-row flex-items-center flex-justify-start pt-1">
     <Link />
-    <a href="https://github.com/andresmontoyain">github.com/andresmontoyain</a>
+    <a href="https://github.com/MontoyaAndres/">github.com/MontoyaAndres/</a>
   </li>
 </ul>
