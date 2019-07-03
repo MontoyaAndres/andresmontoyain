@@ -16,7 +16,7 @@
     "Apollo",
     "Node.js",
     "Jest",
-    "NextJS",
+    "Next.js",
     "Mobx",
     "MySQL",
     "MongoDB"
@@ -24,14 +24,11 @@
 
   const learning = [
     "Redis",
-    "Python",
-    "Svelte.js",
     "PostgreSQL",
     "Electron.js",
-    "Firebase",
-    "Figma",
+    "AWS Amplify",
     "Prisma",
-    "AWS Amplify"
+    "Figma"
   ];
 </script>
 

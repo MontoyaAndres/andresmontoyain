@@ -72,6 +72,15 @@
         "technology": "Community"
       },
       {
+        "months": "july",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-react-native.jpg",
+        "commit": "Diploma of \"DESARROLLO DE APPS CON REACT NATIVE\"",
+        "type": "study/platzi",
+        "technology": "JavaScript"
+      },
+      {
         "months": "june",
         "years": "2019",
         "icon": "rocket",
@@ -214,6 +223,15 @@
         "commit": "Finalice la carrera Tecnología en Informática en la UNIMINUTO Centro regional Girardot",
         "type": "estudio/universidad",
         "technology": "Comunidad"
+      },
+      {
+        "months": "julio",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-react-native.jpg",
+        "commit": "Diploma de \"DESARROLLO DE APPS CON REACT NATIVE\"",
+        "type": "study/platzi",
+        "technology": "JavaScript"
       },
       {
         "months": "junio",
