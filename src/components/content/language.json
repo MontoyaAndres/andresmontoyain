@@ -14,6 +14,14 @@
         "year": "2019"
       },
       {
+        "url": "https://github.com/MontoyaAndres/TeViColombia",
+        "title": "Te Vi Colombia",
+        "description": "Tejidos virtuales for the entrepreneurship, the professional practices and employment",
+        "language": "JavaScript",
+        "status": "Completed",
+        "year": "2019"
+      },
+      {
         "url": "https://github.com/MontoyaAndres/GradeProject",
         "title": "Exception of absenteeism UNIMINUTO",
         "description": "Software Remission (exception of absenteeism) for UNIMINUTO Girardot, Colombia",
@@ -136,7 +144,7 @@
       },
       {
         "months": "november",
-        "years": "2018-*",
+        "years": "2018-2019",
         "icon": "git",
         "commit": "Let's beginning an entrepreneurship!",
         "card": {
@@ -164,6 +172,14 @@
         "description": "Crear tu propia powershell, malware para escritorio o incluso clickjacking web con un único comando para sistemas unix y windows.",
         "language": "Python",
         "status": "Trabajando",
+        "year": "2019"
+      },
+      {
+        "url": "https://github.com/MontoyaAndres/TeViColombia",
+        "title": "Te Vi Colombia",
+        "description": "Tejidos virtuales para el emprendimiento, las prácticas profesionales y la empleabilidad",
+        "language": "JavaScript",
+        "status": "Completado",
         "year": "2019"
       },
       {
@@ -230,7 +246,7 @@
         "icon": "rocket",
         "urlFile": "images/diploma-react-native.jpg",
         "commit": "Diploma de \"DESARROLLO DE APPS CON REACT NATIVE\"",
-        "type": "study/platzi",
+        "type": "estudio/platzi",
         "technology": "JavaScript"
       },
       {
