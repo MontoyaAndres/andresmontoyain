@@ -83,6 +83,15 @@
         "months": "july",
         "years": "2019",
         "icon": "rocket",
+        "urlFile": "images/diploma-base-de-datos.jpg",
+        "commit": "Diploma of \"CARRERA DE BASES DE DATOS\"",
+        "type": "study/platzi",
+        "technology": "SQL and NoSQL"
+      },
+      {
+        "months": "july",
+        "years": "2019",
+        "icon": "rocket",
         "urlFile": "images/diploma-react-native.jpg",
         "commit": "Diploma of \"DESARROLLO DE APPS CON REACT NATIVE\"",
         "type": "study/platzi",
@@ -239,6 +248,15 @@
         "commit": "Finalice la carrera Tecnología en Informática en la UNIMINUTO Centro regional Girardot",
         "type": "estudio/universidad",
         "technology": "Comunidad"
+      },
+      {
+        "months": "julio",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-base-de-datos.jpg",
+        "commit": "Diploma de \"CARRERA DE BASES DE DATOS\"",
+        "type": "estudio/platzi",
+        "technology": "SQL y NoSQL"
       },
       {
         "months": "julio",
