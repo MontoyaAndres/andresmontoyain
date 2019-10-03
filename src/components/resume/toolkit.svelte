@@ -9,34 +9,20 @@
     "Git",
     "HTML",
     "CSS",
-    "JS",
-    "React",
+    "JavaScript",
+    "React.js",
     "TypeScript",
     "GraphQL",
     "Apollo",
     "Node.js",
     "Jest",
-    "Next.js",
-    "Mobx",
     "MySQL",
-    "MongoDB"
-  ];
-
-  const learning = [
-    "Redis",
     "PostgreSQL",
-    "Electron.js",
-    "AWS Amplify",
-    "Prisma",
-    "Figma"
+    "MongoDB"
   ];
 </script>
 
 <ToolkitSet
   title={json[current_language].setToolsTitle}
   items={toolkits}
-  {randomColor} />
-<ToolkitSet
-  title={json[current_language].learningToolsTitle}
-  items={learning}
   {randomColor} />

@@ -5,8 +5,7 @@
     "codeMessage": "View this resume inside 👀",
     "networkMessage": "Professional network",
     "socialNetworkTitle": "Elsewhere",
-    "setToolsTitle": "Toolkit Set",
-    "learningToolsTitle": "Learning"
+    "setToolsTitle": "Toolkit Set"
   },
   "es": {
     "subtitle": "Ingeniero de Software en formación",
@@ -14,7 +13,6 @@
     "codeMessage": "Ver este resumen por dentro 👀",
     "networkMessage": "Red profesional",
     "socialNetworkTitle": "¿Dónde más?",
-    "setToolsTitle": "Conjunto de herramientas",
-    "learningToolsTitle": "Aprendiendo"
+    "setToolsTitle": "Conjunto de herramientas"
   }
 }

@@ -1,8 +1,6 @@
 {
   "version": 2,
   "name": "resume",
-  "alias": "andresmontoyain",
-  "public": true,
   "regions": ["sfo"],
   "builds": [
     {
