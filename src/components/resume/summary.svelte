@@ -32,7 +32,7 @@
      {json[current_language].subtitle}
   </h2>
   <h2 class="f3-light text-gray summary-subtitle">
-    (Front-End / Back-End・JavaScript)
+    (Front-End Dev)
   </h2>
 </div>
 <p class="f5 mb-3 gray-900-text"> {json[current_language].description} </p>

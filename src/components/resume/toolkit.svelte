@@ -16,9 +16,8 @@
     "Apollo",
     "Node.js",
     "Jest",
-    "MySQL",
-    "PostgreSQL",
-    "MongoDB"
+    "Electron.js",
+    "Serverless"
   ];
 </script>
 
