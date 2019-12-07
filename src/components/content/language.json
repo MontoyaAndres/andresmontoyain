@@ -72,6 +72,15 @@
     ],
     "experiences": [
       {
+        "months": "december",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-escuela-js.jpg",
+        "commit": "Diploma of \"CARRERA DE JAVASCRIPT\"",
+        "type": "study/platzi",
+        "technology": "JavaScript"
+      },
+      {
         "months": "february-october",
         "years": "2016-2019",
         "icon": "gift",
@@ -241,6 +250,15 @@
       }
     ],
     "experiences": [
+      {
+        "months": "diciembre",
+        "years": "2019",
+        "icon": "rocket",
+        "urlFile": "images/diploma-escuela-js.jpg",
+        "commit": "Diploma de \"CARRERA DE JAVASCRIPT\"",
+        "type": "estudio/platzi",
+        "technology": "JavaScript"
+      },
       {
         "months": "febrero-octubre",
         "years": "2016-2019",
