@@ -72,6 +72,15 @@
     ],
     "experiences": [
       {
+        "months": "january",
+        "years": "2020",
+        "icon": "rocket",
+        "urlFile": "images/diploma-matematicas-programacion.jpg",
+        "commit": "Diploma of \"MATEMÁTICAS PARA LA PROGRAMACIÓN\"",
+        "type": "study/platzi",
+        "technology": "Fun and some Python"
+      },
+      {
         "months": "december",
         "years": "2019",
         "icon": "rocket",
@@ -250,6 +259,15 @@
       }
     ],
     "experiences": [
+      {
+        "months": "january",
+        "years": "2020",
+        "icon": "rocket",
+        "urlFile": "images/diploma-matematicas-programacion.jpg",
+        "commit": "Diploma de \"MATEMÁTICAS PARA LA PROGRAMACIÓN\"",
+        "type": "study/platzi",
+        "technology": "Diversión y algo de Python"
+      },
       {
         "months": "diciembre",
         "years": "2019",
