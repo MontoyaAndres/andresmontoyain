@@ -7,17 +7,16 @@
 
   const toolkits = [
     "Git",
-    "HTML",
-    "CSS",
+    "TypeScript",
     "JavaScript",
     "React.js",
-    "TypeScript",
-    "GraphQL",
-    "Apollo",
     "Node.js",
+    "GraphQL",
+    "CSS",
+    "HTML",
     "Jest",
-    "Electron.js",
-    "Serverless"
+    "Serverless",
+    "AWS Amplify"
   ];
 </script>
 
