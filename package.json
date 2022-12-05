@@ -1,0 +1,34 @@
+{
+  "name": "andresmontoyain",
+  "version": "1.0.0",
+  "description": "This is my personal website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MontoyaAndres/andresmontoyain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MontoyaAndres/andresmontoyain/issues"
+  },
+  "homepage": "https://github.com/MontoyaAndres/andresmontoyain#readme",
+  "dependencies": {
+    "next": "^13.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@styled-jsx/plugin-sass": "^4.0.2",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "sass": "^1.56.1",
+    "typescript": "4.9.3"
+  }
+}
