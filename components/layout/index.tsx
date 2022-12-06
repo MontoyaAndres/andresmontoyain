@@ -31,6 +31,23 @@ export const Layout = (props: IProps) => {
     setShouldExpandInput(value);
   };
 
+  const handleFeedback = () => {
+    const title = "Issue with page/post";
+    const body = `
+I found something wrong on this page:
+
+${window.location.href}
+
+Here's what it is:
+    `;
+
+    const url = `https://github.com/MontoyaAndres/andresmontoyain/issues/new?title=${encodeURIComponent(
+      title
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <>
       <style jsx global>{`
@@ -194,7 +211,12 @@ export const Layout = (props: IProps) => {
           <Link href="/articles" className="is-hidden">
             <p className="navbar-left-text">Articles</p>
           </Link>
-          <p className="navbar-left-text is-hidden">Feedback</p>
+          <p
+            className="navbar-left-text is-hidden"
+            onClick={() => handleFeedback()}
+          >
+            Feedback
+          </p>
           <input
             name="search"
             value={values?.search || ""}

@@ -1,17 +1,15 @@
 import { Card } from "../card";
-import { ListContent } from "./styles";
+import { ListContent } from "../home/styles";
 
-export const Home = () => {
+export const Articles = () => {
   return (
     <>
       <ListContent />
       <div className="container">
         <p className="brief-description">
-          Hi there, I'm <a href="/about">Andrés Montoya</a>, Software Developer
-          building scalable and cost-effective products in the decentralized
-          cloud. I just share here what I learn :).
+          Articles are single-page pieces that give a whirlwind tour of a
+          specific topic.
         </p>
-        <p className="title">Recent articles</p>
         <div className="cards">
           <Card
             title="hey"
